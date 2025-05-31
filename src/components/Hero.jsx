@@ -2,8 +2,8 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
-
+// import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 import img1 from '../assets/1.jpg';
 import img2 from '../assets/2.jpg';
@@ -45,13 +45,20 @@ function Hero() {
       </AnimatePresence>
 
       {/* Navigation buttons */}
-     <FontAwesomeIcon icon={faArrowLeft}
+<FontAwesomeIcon
+  icon={faChevronLeft}
   onClick={prevImage}
-  className="absolute left-4 top-1/2 -translate-y-1/2 text-white text-4xl z-10 cursor-pointer border-1 rounded-full p-12 right-96" />
+  className="hidden md:block absolute left-0 top-1/2 -translate-y-1/2 text-white text-3xl z-10 cursor-pointer border border-white rounded-full p-12"
+/>
 
-<FontAwesomeIcon icon={faArrowRight}
+<FontAwesomeIcon
+  icon={faChevronRight}
   onClick={nextImage}
-  className="absolute right-4 top-1/2 -translate-y-1/2 text-white text-4xl z-10 cursor-pointer border-1 rounded-full p-12 left-96" />
+  className="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 text-white text-3xl z-10 cursor-pointer border border-white rounded-full p-12"
+/>
+
+
+
 
     </div>
   );
