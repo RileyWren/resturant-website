@@ -5,10 +5,10 @@ const Navbar = () => {
   return (
     <div className="fixed top-0 left-0 w-full z-20 flex items-center justify-between px-6 py-4 bg-transparent">
       <div>
-        <img src={logo} alt="Logo" className="h-30 w-auto" />
+        <img src={logo} alt="Logo" className=" h-15 sm:h-30 w-auto" />
       </div>
-      <div className="text-white text-xl font-bold">Restaurant</div>
-<div className="md:hidden text-white text-2xl">
+      <div className="text-white text-2xl mt-20 sm:text-6xl mr-15 font-bold">Restaurant</div>
+<div className=" text-white text-2xl">
   ☰
 </div>
 

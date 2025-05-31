@@ -54,16 +54,20 @@ function Hero() {
       <div className="absolute inset-0 bg-black/30  z-10" />
 
       {/* Navigation Buttons */}
+      <div className='hidden md:block'>
       <FontAwesomeIcon
         icon={faChevronLeft}
         onClick={prevImage}
         className="hidden md:block absolute left-6 top-1/2 -translate-y-1/2 text-white text-3xl z-20 cursor-pointer border border-white rounded-full p-6"
       />
+      </div>
+      <div className='hidden md:block'>
       <FontAwesomeIcon
         icon={faChevronRight}
         onClick={nextImage}
         className="hidden md:block absolute right-6 top-1/2 -translate-y-1/2 text-white text-3xl z-20 cursor-pointer border border-white rounded-full p-6"
       />
+      </div>
     </div>
   );
 }
