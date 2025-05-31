@@ -7,6 +7,7 @@ import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons
 import img1 from '../assets/1.webp';
 import img2 from '../assets/img2.avif';
 import img3 from '../assets/3.jpg';
+import Navbar from './Navbar';
 
 const images = [img1, img2, img3];
 
@@ -30,6 +31,7 @@ function Hero() {
 
   return (
     <div className="relative h-screen w-screen overflow-hidden bg-black">
+        <Navbar />
       {/* Image stack for smooth crossfade */}
       {images.map((img, index) => (
         <motion.img
@@ -45,6 +47,8 @@ function Hero() {
           style={{ pointerEvents: 'none' }}
         />
       ))}
+
+
 
       {/* Optional overlay for styling */}
       <div className="absolute inset-0 bg-black/30  z-10" />
