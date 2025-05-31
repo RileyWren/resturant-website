@@ -1,12 +1,11 @@
 
 import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
-import img1 from '../assets/1.jpg';
-import img2 from '../assets/2.jpg';
+import img1 from '../assets/1.webp';
+import img2 from '../assets/img2.avif';
 import img3 from '../assets/3.jpg';
 
 const images = [img1, img2, img3];
@@ -31,35 +30,36 @@ function Hero() {
 
   return (
     <div className="relative h-screen w-screen overflow-hidden bg-black">
-
-      <AnimatePresence>
-        <motion.div
-          key={currentIndex}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 1.5 }}
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${images[currentIndex]})` }}
+      {/* Image stack for smooth crossfade */}
+      {images.map((img, index) => (
+        <motion.img
+          key={index}
+          src={img}
+          alt=""
+          initial={false}
+          animate={{
+            opacity: index === currentIndex ? 1 : 0,
+          }}
+          transition={{ duration: 1.5, ease: "easeInOut" }}
+          className="absolute inset-0 w-full h-full object-cover z-0"
+          style={{ pointerEvents: 'none' }}
         />
-      </AnimatePresence>
+      ))}
 
-      {/* Navigation buttons */}
-<FontAwesomeIcon
-  icon={faChevronLeft}
-  onClick={prevImage}
-  className="hidden md:block absolute left-0 top-1/2 -translate-y-1/2 text-white text-3xl z-10 cursor-pointer border border-white rounded-full p-12"
-/>
+      {/* Optional overlay for styling */}
+      <div className="absolute inset-0 bg-black/30  z-10" />
 
-<FontAwesomeIcon
-  icon={faChevronRight}
-  onClick={nextImage}
-  className="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 text-white text-3xl z-10 cursor-pointer border border-white rounded-full p-12"
-/>
-
-
-
-
+      {/* Navigation Buttons */}
+      <FontAwesomeIcon
+        icon={faChevronLeft}
+        onClick={prevImage}
+        className="hidden md:block absolute left-6 top-1/2 -translate-y-1/2 text-white text-3xl z-20 cursor-pointer border border-white rounded-full p-6"
+      />
+      <FontAwesomeIcon
+        icon={faChevronRight}
+        onClick={nextImage}
+        className="hidden md:block absolute right-6 top-1/2 -translate-y-1/2 text-white text-3xl z-20 cursor-pointer border border-white rounded-full p-6"
+      />
     </div>
   );
 }
