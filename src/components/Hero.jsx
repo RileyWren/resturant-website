@@ -47,11 +47,11 @@ function Hero() {
       {/* Navigation buttons */}
      <FontAwesomeIcon icon={faArrowLeft}
   onClick={prevImage}
-  className="absolute left-4 top-1/2 -translate-y-1/2 text-white text-4xl z-10 cursor-pointer" />
+  className="absolute left-4 top-1/2 -translate-y-1/2 text-white text-4xl z-10 cursor-pointer border-1 rounded-full p-12 right-96" />
 
 <FontAwesomeIcon icon={faArrowRight}
   onClick={nextImage}
-  className="absolute right-4 top-1/2 -translate-y-1/2 text-white text-4xl z-10 cursor-pointer" />
+  className="absolute right-4 top-1/2 -translate-y-1/2 text-white text-4xl z-10 cursor-pointer border-1 rounded-full p-12 left-96" />
 
     </div>
   );
