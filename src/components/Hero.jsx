@@ -13,15 +13,24 @@ import Navbar from './Navbar';
 
 function Hero() {
   return (
-    <div 
-      className="relative h-screen w-screen overflow-hidden bg-black"
-      style={{
-        backgroundImage: `url(${img4})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat'
-      }}
-    >
+ 
+<motion.div
+  initial={{ scale: 1 }}
+  animate={{ scale: 1.1 }}
+  transition={{
+    duration: 20,
+    repeat: Infinity,
+    repeatType: 'reverse',
+    ease: 'easeInOut'
+  }}
+  className="relative h-screen w-screen overflow-hidden bg-black"
+  style={{
+    backgroundImage: `url(${img4})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat'
+  }}
+>
       <Navbar />
       
       <div className='flex flex-col justify-center text-center align-middle items-center h-screen gap-10 text-wrap'>
@@ -42,7 +51,7 @@ function Hero() {
 </div>
       {/* Optional overlay for styling */}
       <div className="absolute inset-0 bg-black/30 z-10" />
-    </div>
+    </motion.div>
   );
 }
 
