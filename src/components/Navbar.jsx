@@ -7,7 +7,7 @@ const Navbar = () => {
       <div>
         <img src={logo} alt="Logo" className=" h-15 sm:h-30 w-23 sm:w-auto" />
       </div>
-      <div className="text-white text-2xl mt-20 sm:mt-0 sm:text-4xl font-cursive md:text-5xl mr-15 font-bold">Restaurant</div>
+      <div className="text-white text-2xl mt-20 sm:mt-0 sm:text-4xl font-Belleza md:text-5xl mr-15 font-bold">Restaurant</div>
 <div className=" text-white text-xs sm:text-2xl">
   ☰
 </div>
