@@ -7,67 +7,41 @@ import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons
 import img1 from '../assets/1.webp';
 import img2 from '../assets/img2.avif';
 import img3 from '../assets/3.jpg';
+import img4 from '../assets/img4.jpg';
+
 import Navbar from './Navbar';
 
-const images = [img1, img2, img3];
-
 function Hero() {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % images.length);
-    }, 5000);
-    return () => clearInterval(interval);
-  }, []);
-
-  const nextImage = () => {
-    setCurrentIndex((prev) => (prev + 1) % images.length);
-  };
-
-  const prevImage = () => {
-    setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
-  };
-
   return (
-    <div className="relative h-screen w-screen overflow-hidden bg-black">
-        <Navbar />
-      {/* Image stack for smooth crossfade */}
-      {images.map((img, index) => (
-        <motion.img
-          key={index}
-          src={img}
-          alt=""
-          initial={false}
-          animate={{
-            opacity: index === currentIndex ? 1 : 0,
-          }}
-          transition={{ duration: 1.5, ease: "easeInOut" }}
-          className="absolute inset-0 w-full h-full object-cover z-0"
-          style={{ pointerEvents: 'none' }}
-        />
-      ))}
+    <div 
+      className="relative h-screen w-screen overflow-hidden bg-black"
+      style={{
+        backgroundImage: `url(${img4})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
+    >
+      <Navbar />
+      
+      <div className='flex flex-col justify-center text-center align-middle items-center h-screen gap-10 text-wrap'>
+        <h1 className='text-5xl font-extrabold text-white z-30 relative sm:text-7xl md:text-8xl'>Simply <br />Delicious</h1>
+        <p className='text-white z-30 relative text-sm sm:text-base md:text-lg text-wrap'>We bring you a fusion of flavours crafted with passion.From fresh <br className='hidden sm:block' /> ingredients to expertly prepared dishes, every bite is a celebration.</p>
 
-
-
+         <motion.button 
+                className="px-4 py-3 bg-white/10 backdrop-blur-lg border border-white/40 text-white rounded-xs shadow-md cursor-pointer z-40 relative"
+                whileHover={{ 
+                  scale: 1.05,
+                  backgroundColor: "rgba(255,255,255,0.3)" 
+                }}
+                whileTap={{ scale: 0.95 }}
+                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+              >
+                Reserve a Table
+              </motion.button>
+</div>
       {/* Optional overlay for styling */}
-      <div className="absolute inset-0 bg-black/30  z-10" />
-
-      {/* Navigation Buttons */}
-      <div className='hidden md:block'>
-      <FontAwesomeIcon
-        icon={faChevronLeft}
-        onClick={prevImage}
-        className="hidden md:block absolute left-6 top-1/2 -translate-y-1/2 text-white text-3xl z-20 cursor-pointer border border-white rounded-full p-6"
-      />
-      </div>
-      <div className='hidden md:block'>
-      <FontAwesomeIcon
-        icon={faChevronRight}
-        onClick={nextImage}
-        className="hidden md:block absolute right-6 top-1/2 -translate-y-1/2 text-white text-3xl z-20 cursor-pointer border border-white rounded-full p-6"
-      />
-      </div>
+      <div className="absolute inset-0 bg-black/30 z-10" />
     </div>
   );
 }
