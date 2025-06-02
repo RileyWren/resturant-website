@@ -15,14 +15,6 @@ function Hero() {
   return (
  
 <motion.div
-  initial={{ scale: 1 }}
-  animate={{ scale: 1.1 }}
-  transition={{
-    duration: 20,
-    repeat: Infinity,
-    repeatType: 'reverse',
-    ease: 'easeInOut'
-  }}
   className="relative h-screen w-screen overflow-hidden bg-black"
   style={{
     backgroundImage: `url(${img4})`,
