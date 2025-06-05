@@ -30,10 +30,10 @@ const SecondPart = () => {
       <div className='hidden sm:flex bg-neutral-950 text-white text-left p-8 gap-8 items-center'>
         {/* Left side: text */}
         <div className='flex-1'>
-          <h3 className='text-4xl font-medium mb-4'>More than just a restaurant</h3>
+          <h3 className='text-4xl font-medium mb-20'>More than just a restaurant</h3>
           <br />
-          <h6 className='text-xl font-bold mb-2'>ABOUT THE RESTAURANT</h6>
-          <p className='text-sm mb-4'>
+          <h6 className='text-xl font-bold mb-6'>ABOUT THE RESTAURANT</h6>
+          <p className='text-sm mb-15 max-w-96'>
             Our journey is rooted in a love for fresh, high-quality ingredients and a dedication to crafting dishes that blend tradition with innovation.
           </p>
           <motion.button
