@@ -21,7 +21,7 @@ const Navbar = () => {
         )}
       </AnimatePresence>
 
-      <nav className="w-full px-4 sm:px-6 py-4 flex justify-between items-center bg-white/5 backdrop-blur-md z-50 relative border-b border-white/10">
+      <nav className="w-full px-4 sm:px-6 py-4 flex justify-between items-center z-50 relative border-b border-white/10">
         {/* Logo */}
         <motion.div 
           className="text-xl font-semibold text-white"

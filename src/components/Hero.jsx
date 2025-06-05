@@ -30,7 +30,7 @@ function Hero() {
         <p className='text-white z-30 relative text-sm sm:text-base md:text-lg text-wrap'>We bring you a fusion of flavours crafted with passion.From fresh <br className='hidden sm:block' /> ingredients to expertly prepared dishes, every bite is a celebration.</p>
 
          <motion.button 
-                className="px-4 py-3 bg-white/10 backdrop-blur-lg border border-white/40 text-white rounded-xs shadow-md cursor-pointer z-40 relative"
+                className="px-3 py-2 sm:px-4 sm:py-3 bg-white/10 backdrop-blur-lg border border-white/40 text-white rounded-xs shadow-md cursor-pointer z-40 relative"
                 whileHover={{ 
                   scale: 1.05,
                   backgroundColor: "rgba(255,255,255,0.3)" 
