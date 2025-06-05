@@ -28,7 +28,7 @@ function Hero() {
       <div className='flex flex-col justify-center text-center align-middle items-center h-screen gap-10 text-wrap'>
         <h1 className='text-5xl font-extrabold text-white z-30 relative sm:text-7xl md:text-8xl'>Simply <br />Delicious</h1>
         <p className='text-white z-30 relative text-sm sm:text-base md:text-lg text-wrap'>We bring you a fusion of flavours crafted with passion.From fresh <br className='hidden sm:block' /> ingredients to expertly prepared dishes, every bite is a celebration.</p>
-
+<div className='mb-14'>
          <motion.button 
                 className="px-3 py-2 sm:px-4 sm:py-3 bg-white/10 backdrop-blur-lg border border-white/40 text-white rounded-xs shadow-md cursor-pointer z-40 relative"
                 whileHover={{ 
@@ -40,6 +40,7 @@ function Hero() {
               >
                 Reserve a Table
               </motion.button>
+              </div>
 </div>
       {/* Optional overlay for styling */}
       <div className="absolute inset-0 bg-black/30 z-10" />
