@@ -31,6 +31,7 @@ const SecondPart = () => {
         {/* Left side: text */}
         <div className='flex-1'>
           <h3 className='text-4xl font-medium mb-4'>More than just a restaurant</h3>
+          <br />
           <h6 className='text-xl font-bold mb-2'>ABOUT THE RESTAURANT</h6>
           <p className='text-sm mb-4'>
             Our journey is rooted in a love for fresh, high-quality ingredients and a dedication to crafting dishes that blend tradition with innovation.
@@ -43,13 +44,13 @@ const SecondPart = () => {
           >
             More about Kofeo
           </motion.button>
-          <img src={chef1} className='w-full h-auto rounded-2xl' />
+          <img src={chef1} className='w-full h-auto rounded-1xl mt-10' />
 
         </div>
 
         {/* Right side: images */}
         <div className='flex-1 flex flex-col gap-4'>
-          <img src={chef2} className='w-full h-auto rounded-2xl' />
+          <img src={chef2} className='w-full h-auto rounded-1xl' />
         </div>
       </div>
     </>
