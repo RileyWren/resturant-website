@@ -24,7 +24,7 @@ const ImageZoom = ({ src, alt }) => {
   ref={ref}
   initial={{ scale: 1.2, opacity: 0 }}
   animate={controls}
-  transition={{ duration: 1.6, ease: [0.25, 0.46, 0.45, 0.94] }} 
+  transition={{ duration: 1.6, ease: [0.25, 0.46, 0.45, 0.94] }} // custom ease for smooth out
   className="w-full h-full object-cover shadow-md hover:scale-105 transition-transform duration-500 will-change-transform"
   src={src}
   alt={alt}
