@@ -8,15 +8,15 @@ import appetizer6 from "../assets/appetizer6.jpeg"
 
 const Appetizer = () => {
   return (
-    <>
-    <div className="flex flex-col justify-between">
-        <img src={appetizer1} />
+    <div className="flex justify-between m-7 gap-9">
+    <div className="">
+        <img className="h-96" src={appetizer1} />
     </div>
     <div>
-        <h3>APPETIZERS ----------------------</h3>
-        <div>
+        <h3 className="text-white text-2xl m-10">APPETIZERS ----------------------</h3>
+        <div className="flex text-white">
             <div className="">
-            <img src={appetizer2} />
+            <img className="w-20 h-20 rounded-full" src={appetizer2} />
             </div>
             <div>
                 <p>smoked salmon</p>
@@ -26,7 +26,7 @@ const Appetizer = () => {
         </div>
         
     </div>
-    </>
+    </div>
   )
 }
 
