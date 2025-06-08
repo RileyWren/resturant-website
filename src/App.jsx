@@ -6,12 +6,12 @@ import SignatureDish from './components/SignatureDish'
 
 const App = () => {
   return (
-    <>
+    <div className='bg-neutral-950 overflow-x-hidden'>
     
       <Hero />
       <SecondPart />
     <SignatureDish />
-    </>
+    </div>
   )
 }
 
