@@ -2,6 +2,8 @@
 import appetizer2 from "../assets/appetizer2.jpeg"
 import rice from "../assets/blackPlate.jpg"
 import meat from "../assets/meat.jpg"
+import meat2 from "../assets/meat2.jpg"
+
 import noodles from "../assets/noodles2.jpeg"
 
 const appetizers = [
@@ -39,7 +41,7 @@ const MainDish = () => {
 
       {/* Appetizer list */}
       <div className="flex flex-col gap-8 overflow-y-auto">
-        <h3 className="text-3xl font-semibold">APPETIZERS</h3>
+        <h3 className="text-3xl font-semibold">Main Dish</h3>
         {appetizers.map((item, index) => (
           <div key={index} className="flex items-start gap-5">
             <img
@@ -58,7 +60,7 @@ const MainDish = () => {
        <div className="hidden md:block flex-shrink-0">
         <img
           className=" sm:max-h-[450px] md:max-h-[450px] object-cover rounded-xl shadow-lg"
-          src={noodles}
+          src={meat2}
           alt="Main dish"
         />
       </div>
