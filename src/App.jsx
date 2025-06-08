@@ -4,6 +4,7 @@ import SecondPart from './components/SecondPart'
 import SignatureDish from './components/SignatureDish'
 import Appetizer from './components/Appetizer'
 import MainDish from './components/MainDish'
+import ExploreMenu from './components/ExploreMenu'
 
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
     <SignatureDish />
     <Appetizer />
     <MainDish />
+    <ExploreMenu />
     </div>
   )
 }
