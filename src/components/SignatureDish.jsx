@@ -35,7 +35,7 @@ const ImageZoom = ({ src, alt }) => {
 
 const SignatureDish = () => {
   return (
-    <div className="bg-neutral-950 text-white content-center items-center text-center  w-screen">
+    <div className="bg-neutral-950 text-white content-center items-center text-center mb-50 w-screen">
       <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold m-6 sm:m-9 tracking-wide leading-tight text-white drop-shadow-md">
   Explore Our Cuisines
 </h2>

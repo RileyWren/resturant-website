@@ -25,17 +25,17 @@ const appetizers = [
   }
 ]
 
-const Appetizer = () => {
+const MainDish = () => {
   return (
-    <div className="flex flex-col md:flex-row justify-between m-7 mb-40 gap-9  text-white">
+    <div className="flex flex-col md:flex-row justify-between m-7 gap-9  text-white">
       {/* Left image, only visible on md+ screens */}
-      <div className="hidden md:block flex-shrink-0">
+      {/* <div className="hidden md:block flex-shrink-0">
         <img
           className=" sm:max-h-[400px] md:max-h-[450px] object-cover rounded-xl shadow-lg"
           src={rice}
           alt="Main dish"
         />
-      </div>
+      </div> */}
 
       {/* Appetizer list */}
       <div className="flex flex-col gap-8 overflow-y-auto">
@@ -55,9 +55,15 @@ const Appetizer = () => {
           </div>
         ))}
       </div>
-      
+       <div className="hidden md:block flex-shrink-0">
+        <img
+          className=" sm:max-h-[450px] md:max-h-[450px] object-cover rounded-xl shadow-lg"
+          src={noodles}
+          alt="Main dish"
+        />
+      </div>
     </div>
   )
 }
 
-export default Appetizer
+export default MainDish
