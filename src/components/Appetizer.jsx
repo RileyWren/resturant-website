@@ -9,11 +9,22 @@ import appetizer6 from "../assets/appetizer6.jpeg"
 const Appetizer = () => {
   return (
     <>
-    <div>
+    <div className="flex flex-col justify-between">
         <img src={appetizer1} />
     </div>
     <div>
-        <div></div>
+        <h3>APPETIZERS ----------------------</h3>
+        <div>
+            <div className="">
+            <img src={appetizer2} />
+            </div>
+            <div>
+                <p>smoked salmon</p>
+                <p>Basmati rice / mixed vegetables / saffron / whole spices</p>
+            </div>
+            <div>$13.49</div>
+        </div>
+        
     </div>
     </>
   )
