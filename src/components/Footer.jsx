@@ -6,7 +6,7 @@ import { FaFacebookF, FaInstagram, FaYoutube, FaXTwitter } from "react-icons/fa6
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white px-6 py-16 relative overflow-hidden">
+    <footer className="bg-neutral-950 text-white px-6 py-16 relative overflow-hidden">
       {/* Background watermark text */}
       <div className="absolute bottom-0 left-0 text-[20rem] text-white/5 font-bold select-none pointer-events-none leading-none">
         Kofeo
