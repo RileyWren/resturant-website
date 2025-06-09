@@ -35,6 +35,8 @@ import MainDish from './components/MainDish'
 import ExploreMenu from './components/ExploreMenu'
 import MenuPage from './pages/MenuPage' // <-- create this page
 import ReserveTable from './components/ReserveTable'
+import GuestReviews from './components/GuestReviews'
+import Footer from './components/Footer'
 
 const Home = () => (
   <div className='bg-neutral-950 overflow-x-hidden'>
@@ -45,6 +47,8 @@ const Home = () => (
     <MainDish />
     <ExploreMenu />
     <ReserveTable />
+    <GuestReviews />
+    <Footer />
   </div>
 )
 
