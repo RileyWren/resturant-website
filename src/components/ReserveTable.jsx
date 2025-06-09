@@ -1,5 +1,7 @@
 // ReserveTable.jsx
 import React from "react";
+import table1 from '../assets/table1.jpeg'
+import table2 from '../assets/table2.jpeg'
 
 const ReserveTable = () => {
   return (
@@ -7,7 +9,7 @@ const ReserveTable = () => {
       {/* Left Section */}
       <div className="w-1/2 relative">
         <img
-          src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092" // Example image
+          src={table2}
           alt="restaurant"
           className="w-full h-full object-cover"
         />
