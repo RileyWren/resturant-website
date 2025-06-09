@@ -13,18 +13,18 @@ const appetizers = [
     image: appetizer2,
     price: "$13.49"
   },
-  {
-    name: "Spicy Beef Skewers",
-    description: "Grilled beef marinated in a fiery blend of spices, served with a cooling yogurt dip.",
-    image: meat,
-    price: "$14.99" // Adjusted price for variety
-  },
-  {
-    name: "Vegetable Spring Rolls",
-    description: "Crispy spring rolls filled with fresh vegetables, served with sweet chili sauce.",
-    image: noodles, // Using noodles image, perhaps you have a spring roll image?
-    price: "$9.99" // Adjusted price for variety
-  },
+  // {
+  //   name: "Spicy Beef Skewers",
+  //   description: "Grilled beef marinated in a fiery blend of spices, served with a cooling yogurt dip.",
+  //   image: meat,
+  //   price: "$14.99" // Adjusted price for variety
+  // },
+  // {
+  //   name: "Vegetable Spring Rolls",
+  //   description: "Crispy spring rolls filled with fresh vegetables, served with sweet chili sauce.",
+  //   image: noodles, // Using noodles image, perhaps you have a spring roll image?
+  //   price: "$9.99" // Adjusted price for variety
+  // },
   {
     name: "Garlic Prawns",
     description: "Sautéed prawns in butter and garlic, with a hint of parsley and lemon.",

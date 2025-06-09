@@ -86,18 +86,18 @@ const mainDishes = [ // Renamed from appetizers to mainDishes for clarity
     image: meat,
     price: "$24.99"
   },
-  {
-    name: "Grilled Salmon",
-    description: "Perfectly grilled salmon fillet with lemon butter sauce and asparagus.",
-    image: appetizer2, // Using appetizer2, ideally you'd have a specific main dish image
-    price: "$27.50"
-  },
-  {
-    name: "Vegetable Biryani",
-    description: "Fragrant basmati rice cooked with mixed vegetables and aromatic spices.",
-    image: noodles, // Using noodles, ideally you'd have a specific main dish image
-    price: "$19.75"
-  },
+  // {
+  //   name: "Grilled Salmon",
+  //   description: "Perfectly grilled salmon fillet with lemon butter sauce and asparagus.",
+  //   image: appetizer2, // Using appetizer2, ideally you'd have a specific main dish image
+  //   price: "$27.50"
+  // },
+  // {
+  //   name: "Vegetable Biryani",
+  //   description: "Fragrant basmati rice cooked with mixed vegetables and aromatic spices.",
+  //   image: noodles, // Using noodles, ideally you'd have a specific main dish image
+  //   price: "$19.75"
+  // },
   {
     name: "Lamb Shank",
     description: "Slow-cooked lamb shank in rich gravy, served with creamy mashed potatoes.",
