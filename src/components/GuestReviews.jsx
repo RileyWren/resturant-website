@@ -141,7 +141,7 @@ const GuestReviews = () => {
                     .map((r, i) => (
                       <div
                         key={i}
-                        className="flex flex-col sm:flex-row gap-6 items-center sm:items-start p-4 bg-[#2a2a2a] rounded-lg shadow-lg" // Added padding, background, shadow, and flex-col for mobile
+                        className="flex flex-col sm:flex-row gap-6 items-center sm:items-start p-4 bg-[#1a1a1a] rounded-lg " // Added padding, background, shadow, and flex-col for mobile
                       >
                         <img
                           src={r.img}
